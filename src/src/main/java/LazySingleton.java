@@ -19,4 +19,19 @@ public class LazySingleton {
         this.id = id;
         System.out.println("LazySingleton " + id + " instantiated");
     }
+
+    /**
+     * Returns the singleton instance at the given index.
+     * If it doesn't exist, it is created.
+     * @param i index [0-2]
+     * @return LazySingleton instance
+     */
+    public static LazySingleton getInstance(int i) {
+        if (instances[i] == null) {
+            instances[i] = new LazySingleton(i);
+        }
+        return instances[i];
+    }
+
+
 }
