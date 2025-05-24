@@ -35,6 +35,11 @@ public class EagerSingleton {
         return instances[i];
     }
 
+    /**
+     * @return instance id
+     */
 
-
+    public int getId() {
+        return id;
+    }
 }
