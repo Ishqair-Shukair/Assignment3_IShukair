@@ -17,4 +17,13 @@ public class EagerSingleton {
 
     private final int id;
 
+
+    /**
+     * Private constructor for EagerSingleton
+     * @param id - unique identifier of the instance (0, 1, 2)
+     */
+    private EagerSingleton(int id) {
+        this.id = id;
+    }
+
 }
