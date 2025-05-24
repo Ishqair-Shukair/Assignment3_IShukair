@@ -21,4 +21,9 @@ public class EagerSingletonTest {
 
         assertSame(sA, sB);
     }
+    @Test
+    public void testGetId() {
+        EagerSingleton s = EagerSingleton.getInstance(2);
+        assertEquals(2, s.getId());
+    }
 }
