@@ -20,4 +20,10 @@ public class LazySingletonTest {
         LazySingleton b = LazySingleton.getInstance(0);
         assertSame(a, b);
     }
+
+    @Test
+    public void testLazyIdCheck() {
+        LazySingleton s = LazySingleton.getInstance(1);
+        assertEquals(1, s.getId());
+    }
 }
