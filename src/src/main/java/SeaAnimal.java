@@ -5,8 +5,12 @@
 public class SeaAnimal {
 
     /**
-     * @return the name of the land animal
+     * @return the name of the sea animal
      */
     String getName();
 
+    /**
+     * @return how the sea animal swims
+     */
+    String getSwimming();
 }
