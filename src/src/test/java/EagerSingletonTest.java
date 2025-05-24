@@ -13,4 +13,12 @@ public class EagerSingletonTest {
         assertNotEquals(s1, s2);
         assertNotEquals(s0, s2);
     }
+
+    @Test
+    public void testSameInstanceReturned() {
+        EagerSingleton sA = EagerSingleton.getInstance(1);
+        EagerSingleton sB = EagerSingleton.getInstance(1);
+
+        assertSame(sA, sB);
+    }
 }
