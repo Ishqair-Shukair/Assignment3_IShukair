@@ -10,4 +10,13 @@ public class LazySingleton {
 
 
     private final int id;
+
+    /**
+     * Private constructor with ID.
+     * @param id unique identifier of the instance
+     */
+    private LazySingleton(int id) {
+        this.id = id;
+        System.out.println("LazySingleton " + id + " instantiated");
+    }
 }
