@@ -1,8 +1,9 @@
+
 /**
  * Represents an animal that lives on land.
  */
 
-public class SeaAnimal {
+public interface SeaAnimal {
 
     /**
      * @return the name of the sea animal

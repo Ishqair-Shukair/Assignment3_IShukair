@@ -1,12 +1,13 @@
+
 /**
  * Represents an animal that lives in the sky.
  */
-public class SkyAnimal {
+public interface SkyAnimal {
 
     /**
      * @return the name of the sky animal
      */
-    String getName()
+    String getName();
 
     /**
      * @return how the sky animal flies
