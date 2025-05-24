@@ -14,4 +14,7 @@ public class EagerSingleton {
             System.out.println("EagerSingleton " + i + " instantiated");
         }
     }
+
+    private final int id;
+
 }
