@@ -27,4 +27,13 @@ public class CenozoicAnimalFactoryTest {
         assertEquals("Otodus", animals.get(0).getName());
     }
 
+    @Test
+    public void testSkyAnimals() {
+        AnimalAbstractFactory factory = new CenozoicAnimalFactory();
+        List<SkyAnimal> animals = factory.createSkyAnimals();
+        assertEquals(1, animals.size());
+        assertEquals("Argentavis", animals.get(0).getName());
+        assertEquals("flapping", animals.get(0).getFlying());
+    }
+
 }
