@@ -26,4 +26,15 @@ public class EagerSingleton {
         this.id = id;
     }
 
+    /**
+     * Returns one of the 3 singleton instances based on index.
+     * @param i index of instance (0, 1, 2)
+     * @return EagerSingleton instance
+     */
+    public static EagerSingleton getInstance(int i) {
+        return instances[i];
+    }
+
+
+
 }
