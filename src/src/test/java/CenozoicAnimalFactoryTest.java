@@ -18,4 +18,13 @@ public class CenozoicAnimalFactoryTest {
         assertEquals(3, animals.size());
         assertTrue(animals.stream().anyMatch(a -> a.getName().equals("Mammoth")));
     }
+
+    @Test
+    public void testSeaAnimals() {
+        AnimalAbstractFactory factory = new CenozoicAnimalFactory();
+        List<SeaAnimal> animals = factory.createSeaAnimals();
+        assertEquals(2, animals.size());
+        assertEquals("Otodus", animals.get(0).getName());
+    }
+
 }
