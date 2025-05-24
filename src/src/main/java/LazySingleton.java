@@ -32,6 +32,11 @@ public class LazySingleton {
         }
         return instances[i];
     }
+    /**
+     * @return instance id
+     */
 
-
+    public int getId() {
+        return id;
+    }
 }
